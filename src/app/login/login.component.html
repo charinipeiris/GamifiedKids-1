@@ -1,0 +1,67 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <meta name="description" content="Login - Register Template">
+    <meta name="author" content="Lorenzo Angelino aka MrLolok">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="container-login" style="margin-top: 40px;">
+        <div id="title">
+            <i class="material-icons lock">lock</i> Login
+        </div>
+
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">face</i>
+                </div>
+                <input id="username" placeholder="username" type="text" formControlName="username" required class="validate" autocomplete="off">
+                <div class="error" *ngIf="loginForm.controls['username'].hasError('required') && loginForm.controls['username'].touched">Please Enter Username</div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="input">
+                <div class="input-addon">
+                    <i class="material-icons">vpn_key</i>
+                </div>
+                <input id="pwd" placeholder="password" type="password" formControlName="password" autocomplete="off">
+                <div class="error" *ngIf="loginForm.controls['password'].hasError('required') && loginForm.controls['password'].touched">Please Enter Password</div>
+            </div>
+
+            <div class="remember-me">
+                <input type="checkbox">
+                <span style="color: #DDD">Remember Me</span>
+            </div>
+
+           <!-- <button class="btn btn-success" [disabled]="loginForm.invalid">Login</button>  -->
+           <button class="btn btn-success">Login</button>
+           <div *ngIf = "invalidLogin" class="error"></div>
+           <!-- <div>Invalid username or password. Please try again.</div> -->
+        </form>
+
+        <div class="forgot-password">
+            <a href="#">Forgot your password?</a>
+        </div>
+        <div class="privacy">
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="register">
+            Don't have an account yet?
+            <a href="#"><button id="register-link">Sign up here</button></a>
+        </div>
+    </div>
+</body>
+
+</html>
+
