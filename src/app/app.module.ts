@@ -12,13 +12,22 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SigninComponent } from './signin/signin.component';
 import { Grade1Component } from './grade1/grade1.component';
 import { Grade2Component } from './grade2/grade2.component';
+import { EnglishComponent } from './Grade1/english/english.component';
 
 
 const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'signin',component:SigninComponent},
-  {path:'grade1',component:Grade1Component},
+  // {path:'grade1',component:Grade1Component,
+  // children: [
+  //   {
+  //   path:  'english',
+  //   component: EnglishComponent
+  //   }]},
   {path:'grade2',component:Grade2Component},
+  {path:'grade1',component:Grade1Component},
+  {path:'grade1/english',component:EnglishComponent},
+  {path:'grade1/maths',component:Lesson1Component},
 ]
 
 @NgModule({
@@ -31,6 +40,7 @@ const appRoutes:Routes = [
     SigninComponent,
     Grade1Component,
     Grade2Component,
+    EnglishComponent
   
   ],
   imports: [
