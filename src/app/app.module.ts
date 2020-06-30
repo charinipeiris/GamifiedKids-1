@@ -18,14 +18,8 @@ import { EnglishComponent } from './Grade1/english/english.component';
 const appRoutes:Routes = [
   {path:'login',component:LoginComponent},
   {path:'signin',component:SigninComponent},
-  // {path:'grade1',component:Grade1Component,
-  // children: [
-  //   {
-  //   path:  'english',
-  //   component: EnglishComponent
-  //   }]},
-  {path:'grade2',component:Grade2Component},
   {path:'grade1',component:Grade1Component},
+  {path:'grade2',component:Grade2Component},
   {path:'grade1/english',component:EnglishComponent},
   {path:'grade1/maths',component:Lesson1Component},
 ]
