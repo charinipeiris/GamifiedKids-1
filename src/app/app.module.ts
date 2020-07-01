@@ -37,6 +37,13 @@ const appRoutes:Routes = [
   {path:'grade1',component:Grade1Component},
   {path:'grade2',component:Grade2Component},
   {path:'grade1/maths',component:MathsComponent},
+  {path:'home',component:HomeComponent},
+  {path:'grade1/maths/level1',component:Level1Component},
+  {path:'grade1/maths/level2',component:Level2Component},
+  {path:'grade1/maths/level3',component:Level3Component},
+  {path:'grade2/maths/level1',component:Level1Component},
+  {path:'grade2/maths/level2',component:Level2Component},
+  {path:'grade3/maths/level3',component:Level3Component},
  
 ]
 

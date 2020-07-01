@@ -1,0 +1,9 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+ .image{
+    height:40em; 
+    background-size:cover; 
+    width:100%;
+    background-image:url(/assets/images/1478.jpg);
+    background-position:50% 50%;
+    margin-top:-50px;
+  }
