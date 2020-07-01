@@ -3,14 +3,15 @@
     height:40em; 
     background-size:cover; 
     width:100%;
-    background-image:url(/assets/images/pngguru.png);
+    background-image:url(/assets/images/1478.jpg);
     background-position:50% 50%;
+    margin-top:-50px;
   }
 
 
 .button {
   border-radius: 12px;
-  background-color:#f41e89;
+  background-color:#ffffff;
   border: none;
   color: #FFFFFF;
   text-align: center;
